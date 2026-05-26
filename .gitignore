@@ -1,1 +1,8 @@
 Nothing should be ignored in this case, as only a source file (`index.html`) was added without any build artifacts, dependencies, or temporary files.
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
