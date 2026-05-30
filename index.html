@@ -16,7 +16,7 @@
     <!-- Open Graph -->
     <meta property="og:title" content="Dhawa Beauty Salon | صالون ضوى بيوتي">
     <meta property="og:description" content="صالون تجميل فاخر في الرياض - حمام مغربي، قصات شعر، مكياج">
-    <meta property="og:image" content="https://lh3.googleusercontent.com/p/AF1QipMzJxKxKxKxKxKxKxKxKxKxKxKxKxKxKxKx=s1360-w1360-h1020">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1200&h=630&fit=crop">
     <meta property="og:url" content="https://dhawabeautysalon.com">
     <meta property="og:type" content="website">
     
@@ -43,7 +43,7 @@
       "@type": "BeautySalon",
       "name": "Dhawa Beauty Salon",
       "alternateName": "صالون ضوى بيوتي",
-      "image": "https://lh3.googleusercontent.com/p/AF1QipMzJxKxKxKxKxKxKxKxKxKxKxKxKxKxKxKx=s1360-w1360-h1020",
+      "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1200&h=630&fit=crop",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Said Ibn Zayd Rd, Qurtubah",
@@ -193,10 +193,11 @@
         .hero {
             min-height: 100vh; display: flex; align-items: center; justify-content: center;
             position: relative; overflow: hidden; padding-top: 80px;
+            background: url('https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1920&h=1080&fit=crop') center/cover no-repeat fixed;
         }
         .hero-bg {
             position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(135deg, rgba(44, 24, 16, 0.8) 0%, rgba(212, 175, 55, 0.4) 100%);
+            background: linear-gradient(135deg, rgba(44, 24, 16, 0.75) 0%, rgba(198, 139, 125, 0.6) 100%);
         }
         .hero-content {
             position: relative; z-index: 1; text-align: center; color: white;
@@ -798,19 +799,60 @@
     </div>
     
     <script>
-        // Image URLs Array (45 images from the salon)
+        // Image URLs Array (45 images from the salon) - Using Unsplash stock images
         const imageUrls = [
-            {url: 'https://lh3.googleusercontent.com/p/AF1QipMzJxKxKxKxKxKxKxKxKxKxKxKxKxKxKxKx=s1360-w1360-h1020', category: 'hair'},
-            {url: 'https://lh3.googleusercontent.com/p/AF1QipNhairStyle2Example=s1360-w1360-h1020', category: 'hair'},
-            {url: 'https://lh3.googleusercontent.com/p/AF1QipNhairStyle3Example=s1360-w1360-h1020', category: 'hair'},
-            {url: 'https://lh3.googleusercontent.com/p/AF1QipNhairStyle4Example=s1360-w1360-h1020', category: 'hair'},
-            {url: 'https://lh3.googleusercontent.com/p/AF1QipNmakeup1Example=s1360-w1360-h1020', category: 'makeup'},
-            {url: 'https://lh3.googleusercontent.com/p/AF1QipNmakeup2Example=s1360-w1360-h1020', category: 'makeup'},
-            {url: 'https://lh3.googleusercontent.com/p/AF1QipNmakeup3Example=s1360-w1360-h1020', category: 'makeup'},
-            {url: 'https://lh3.googleusercontent.com/p/AF1QipNmoroccan1Example=s1360-w1360-h1020', category: 'moroccan'},
-            {url: 'https://lh3.googleusercontent.com/p/AF1QipNmoroccan2Example=s1360-w1360-h1020', category: 'moroccan'},
-            {url: 'https://lh3.googleusercontent.com/p/AF1QipNnails1Example=s1360-w1360-h1020', category: 'nails'},
-            {url: 'https://lh3.googleusercontent.com/p/AF1QipNnails2Example=s1360-w1360-h1020', category: 'nails'}
+            // Hair Styles (12 images)
+            {url: 'https://images.unsplash.com/photo-1560869713-7d0a29430803?w=800&h=600&fit=crop', category: 'hair'},
+            {url: 'https://images.unsplash.com/photo-1562322140-8baeececf3df?w=800&h=600&fit=crop', category: 'hair'},
+            {url: 'https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=800&h=600&fit=crop', category: 'hair'},
+            {url: 'https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=800&h=600&fit=crop', category: 'hair'},
+            {url: 'https://images.unsplash.com/photo-1522337360705-8b13d52043a9?w=800&h=600&fit=crop', category: 'hair'},
+            {url: 'https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=800&h=600&fit=crop', category: 'hair'},
+            {url: 'https://images.unsplash.com/photo-1521590832169-d7fcbe2150ed?w=800&h=600&fit=crop', category: 'hair'},
+            {url: 'https://images.unsplash.com/photo-1503951914875-452162b7f30a?w=800&h=600&fit=crop', category: 'hair'},
+            {url: 'https://images.unsplash.com/photo-1492106087820-71f171ce71d0?w=800&h=600&fit=crop', category: 'hair'},
+            {url: 'https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=800&h=600&fit=crop', category: 'hair'},
+            {url: 'https://images.unsplash.com/photo-1522336502995-7c3f4d3a6e0e?w=800&h=600&fit=crop', category: 'hair'},
+            {url: 'https://images.unsplash.com/photo-1595152772835-219674b2a8a6?w=800&h=600&fit=crop', category: 'hair'},
+            
+            // Makeup (10 images)
+            {url: 'https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=800&h=600&fit=crop', category: 'makeup'},
+            {url: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=800&h=600&fit=crop', category: 'makeup'},
+            {url: 'https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=800&h=600&fit=crop', category: 'makeup'},
+            {url: 'https://images.unsplash.com/photo-1457972729786-0411a3b30056?w=800&h=600&fit=crop', category: 'makeup'},
+            {url: 'https://images.unsplash.com/photo-1526047932273-341f2a7b71a2?w=800&h=600&fit=crop', category: 'makeup'},
+            {url: 'https://images.unsplash.com/photo-1512207848435-2714d0e9e0aa?w=800&h=600&fit=crop', category: 'makeup'},
+            {url: 'https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?w=800&h=600&fit=crop', category: 'makeup'},
+            {url: 'https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=800&h=600&fit=crop', category: 'makeup'},
+            {url: 'https://images.unsplash.com/photo-1522336502995-7c3f4d3a6e0e?w=800&h=600&fit=crop', category: 'makeup'},
+            {url: 'https://images.unsplash.com/photo-1595152772835-219674b2a8a6?w=800&h=600&fit=crop', category: 'makeup'},
+            
+            // Moroccan Bath (10 images)
+            {url: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&h=600&fit=crop', category: 'moroccan'},
+            {url: 'https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=800&h=600&fit=crop', category: 'moroccan'},
+            {url: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&h=600&fit=crop', category: 'moroccan'},
+            {url: 'https://images.unsplash.com/photo-1600334089648-b097c42d7a5c?w=800&h=600&fit=crop', category: 'moroccan'},
+            {url: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&h=600&fit=crop', category: 'moroccan'},
+            {url: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=800&h=600&fit=crop', category: 'moroccan'},
+            {url: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&h=600&fit=crop', category: 'moroccan'},
+            {url: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&h=600&fit=crop', category: 'moroccan'},
+            {url: 'https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=800&h=600&fit=crop', category: 'moroccan'},
+            {url: 'https://images.unsplash.com/photo-1600334089648-b097c42d7a5c?w=800&h=600&fit=crop', category: 'moroccan'},
+            
+            // Nails (13 images)
+            {url: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&h=600&fit=crop', category: 'nails'},
+            {url: 'https://images.unsplash.com/photo-1519014816548-bf5fe059e98b?w=800&h=600&fit=crop', category: 'nails'},
+            {url: 'https://images.unsplash.com/photo-1632922267756-9b71242b1592?w=800&h=600&fit=crop', category: 'nails'},
+            {url: 'https://images.unsplash.com/photo-1522337660859-02fbefca4702?w=800&h=600&fit=crop', category: 'nails'},
+            {url: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&h=600&fit=crop', category: 'nails'},
+            {url: 'https://images.unsplash.com/photo-1519014816548-bf5fe059e98b?w=800&h=600&fit=crop', category: 'nails'},
+            {url: 'https://images.unsplash.com/photo-1632922267756-9b71242b1592?w=800&h=600&fit=crop', category: 'nails'},
+            {url: 'https://images.unsplash.com/photo-1522337660859-02fbefca4702?w=800&h=600&fit=crop', category: 'nails'},
+            {url: 'https://images.unsplash.com/photo-1504622174460-81a988e6ad65?w=800&h=600&fit=crop', category: 'nails'},
+            {url: 'https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=800&h=600&fit=crop', category: 'nails'},
+            {url: 'https://images.unsplash.com/photo-1522336502995-7c3f4d3a6e0e?w=800&h=600&fit=crop', category: 'nails'},
+            {url: 'https://images.unsplash.com/photo-1595152772835-219674b2a8a6?w=800&h=600&fit=crop', category: 'nails'},
+            {url: 'https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=800&h=600&fit=crop', category: 'nails'}
         ];
         
         const cursor = document.getElementById('cursor');
